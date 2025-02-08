@@ -1,0 +1,339 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApiDotNet6",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Funcionario": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Funcionario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/{id}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/inativaFuncionario": {
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioModelListServiceResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DepartamentoEnum": {
+        "enum": [
+          "RH",
+          "Financeiro",
+          "Compras",
+          "Atendimento",
+          "Zeladoria"
+        ],
+        "type": "string"
+      },
+      "FuncionarioModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "sobrenome": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamento": {
+            "$ref": "#/components/schemas/DepartamentoEnum"
+          },
+          "ativo": {
+            "type": "boolean"
+          },
+          "turno": {
+            "$ref": "#/components/schemas/TurnoEnum"
+          },
+          "dataDeCriacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataDeAlteracao": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FuncionarioModelListServiceResponse": {
+        "type": "object",
+        "properties": {
+          "dados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FuncionarioModel"
+            },
+            "nullable": true
+          },
+          "mensagem": {
+            "type": "string",
+            "nullable": true
+          },
+          "sucesso": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FuncionarioModelServiceResponse": {
+        "type": "object",
+        "properties": {
+          "dados": {
+            "$ref": "#/components/schemas/FuncionarioModel"
+          },
+          "mensagem": {
+            "type": "string",
+            "nullable": true
+          },
+          "sucesso": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TurnoEnum": {
+        "enum": [
+          "Manhã",
+          "Tarde",
+          "Noite"
+        ],
+        "type": "string"
+      }
+    }
+  }
+}
