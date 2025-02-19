@@ -33,7 +33,7 @@ namespace WebApiDotNet6.Controllers
             return Ok(await _funcionarioInterface.CreateFuncionario(novoFuncionario));
         }
 
-        [HttpPut("inativaFuncionario")]
+        [HttpPut("inativaFuncionario/{id}")] 
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> InativaFuncionario(int id)
         {
             return Ok(await _funcionarioInterface.InativaFuncionario(id));

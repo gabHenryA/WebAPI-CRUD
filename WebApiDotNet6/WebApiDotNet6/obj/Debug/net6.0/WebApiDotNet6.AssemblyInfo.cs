@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiDotNet6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04e362eaa90447db4888dce54bc68f1bfb695903")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiDotNet6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiDotNet6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

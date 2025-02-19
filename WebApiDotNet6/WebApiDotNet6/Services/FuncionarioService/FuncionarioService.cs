@@ -9,7 +9,7 @@ namespace WebApiDotNet6.Services.FuncionarioService
         private readonly AplicationDBContext _context;
         public FuncionarioService(AplicationDBContext context)
         {
-            _context = context;
+            _context = context; 
         }
 
         public async Task<ServiceResponse<List<FuncionarioModel>>> CreateFuncionario(FuncionarioModel novoFuncionario)

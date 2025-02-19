@@ -3943,11 +3943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smo computadores\\Documents\\PDE\\Programação\\C#\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
+      "projectUniqueName": "C:\\Users\\smo computadores\\Source\\Repos\\WebAPI-CRUD\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
       "projectName": "WebApiDotNet6",
-      "projectPath": "C:\\Users\\smo computadores\\Documents\\PDE\\Programação\\C#\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
+      "projectPath": "C:\\Users\\smo computadores\\Source\\Repos\\WebAPI-CRUD\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
       "packagesPath": "C:\\Users\\smo computadores\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smo computadores\\Documents\\PDE\\Programação\\C#\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6\\obj\\",
+      "outputPath": "C:\\Users\\smo computadores\\Source\\Repos\\WebAPI-CRUD\\WebApiDotNet6\\WebApiDotNet6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4030,7 +4030,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

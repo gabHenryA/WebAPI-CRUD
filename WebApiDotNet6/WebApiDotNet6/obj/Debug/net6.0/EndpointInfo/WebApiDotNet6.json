@@ -203,7 +203,7 @@
         }
       }
     },
-    "/api/Funcionario/inativaFuncionario": {
+    "/api/Funcionario/inativaFuncionario/{id}": {
       "put": {
         "tags": [
           "Funcionario"
@@ -211,7 +211,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"

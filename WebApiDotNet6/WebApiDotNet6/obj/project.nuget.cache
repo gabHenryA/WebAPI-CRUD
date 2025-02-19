@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zt0yXk+DQjI=",
+  "dgSpecHash": "YQgIBrkrNk0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\smo computadores\\Documents\\PDE\\Programação\\C#\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
+  "projectFilePath": "C:\\Users\\smo computadores\\Source\\Repos\\WebAPI-CRUD\\WebApiDotNet6\\WebApiDotNet6\\WebApiDotNet6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\smo computadores\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\smo computadores\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

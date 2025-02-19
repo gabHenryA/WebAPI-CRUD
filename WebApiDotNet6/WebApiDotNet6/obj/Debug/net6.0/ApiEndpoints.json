@@ -126,7 +126,7 @@
   {
     "ContainingType": "WebApiDotNet6.Controllers.FuncionarioController",
     "Method": "InativaFuncionario",
-    "RelativePath": "api/Funcionario/inativaFuncionario",
+    "RelativePath": "api/Funcionario/inativaFuncionario/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -134,7 +134,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
